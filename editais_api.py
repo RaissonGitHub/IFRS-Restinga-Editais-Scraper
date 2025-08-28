@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Query, HTTPException
 from typing import Optional
-from teste.editais_scraper import scrape_editais_bs
+from editais_scraper import scrape_editais_bs
 import uvicorn
 import requests
 
@@ -30,4 +30,5 @@ def get_editais(
         raise HTTPException(status_code=500, detail=f"Erro interno: {str(e)}")
 
 if __name__ == "__main__":
+
     uvicorn.run(".editais_api:app", host="127.0.0.1", port=8000, reload=True)
