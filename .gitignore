@@ -1,0 +1,17 @@
+__pycache__/
+Lib/
+Include/
+Scripts/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.log
+*.sqlite3
+*.db
+.vscode/
+*.exe
+*.dist-info/
+site-packages/
+venv/
+chromedriver-win64/
